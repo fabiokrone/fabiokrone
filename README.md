@@ -4,6 +4,8 @@
 
 **Full Stack Developer | Public Sector Systems Specialist**
 
+Santa Catarina, Brazil
+
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/fabiokrone)
 [![Email](https://img.shields.io/badge/-Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:fabiokrone10@gmail.com)
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/fabiokrone)
@@ -14,12 +16,16 @@
 
 ## About Me
 
-Software developer focused on building modern web applications for **public administration and government**. I design and implement systems that streamline municipal operations, from payroll management to workforce planning, serving real users across Brazilian municipalities.
+Software developer building production systems for **public administration and government** in Brazil. I combine deep technical skills with real-world domain expertise in **Brazilian labor legislation, payroll compliance, eSocial, and fiscal obligations** to create solutions that actually work in the public sector.
 
-- Building full-stack applications with **React + TypeScript** and **FastAPI + Python**
-- Experienced with **PostgreSQL**, **Supabase**, and **PL/pgSQL** for complex database operations
-- Integrating third-party APIs (Betha Cloud, government platforms) for seamless data workflows
-- Applying **AI and automation** (Flowise, LangChain agents) to optimize processes
+Currently developing and maintaining systems serving **550+ employees** across multiple municipalities, handling everything from payroll processing to workforce planning and regulatory compliance.
+
+- Full-stack development with **React + TypeScript** and **FastAPI + Python**
+- Expert in **PostgreSQL**, **Supabase**, and **PL/pgSQL** for complex database operations
+- Third-party API integrations (Betha Cloud, government platforms) for seamless data workflows
+- **AI and automation** (Flowise, LangChain agents) to optimize processes
+- Deep knowledge of **Brazilian labor law**, eSocial, RAIS, DIRF, SEFIP, and fiscal reporting
+- Background in **Data Science** (statistics, Python, data analysis)
 
 ---
 
@@ -55,6 +61,16 @@ Software developer focused on building modern web applications for **public admi
 
 ---
 
+## Domain Expertise
+
+- **Brazilian Labor Legislation** - CLT, statutory servants, temporary contracts
+- **eSocial** - Implementation, configuration, and compliance for public entities
+- **Fiscal Obligations** - RAIS, DIRF, SEFIP, DCTF, EFD-Reinf
+- **Payroll Systems** - End-to-end payroll processing, benefits, and tax calculations
+- **Public Sector Compliance** - TCE/SC reporting, transparency portals, audit requirements
+
+---
+
 ## Featured Projects
 
 | Project | Description | Stack |
@@ -65,7 +81,17 @@ Software developer focused on building modern web applications for **public admi
 
 ---
 
+## Education & Certifications
+
+- **Data Science Specialization** - Let's Code, São Paulo (2021-2022)
+- **B.Sc. Information Systems** - UNOESC, Santa Catarina (2008-2013)
+- Statistics for Data Science with Python | Data Science Methodology
+
+---
+
 <div align="center">
+
+**Languages:** Portuguese (Native) | English (Fluent) | German (Professional)
 
 *Open to new opportunities and collaborations*
 
