@@ -123,18 +123,6 @@ Automated time-tracking agent with advanced PL/pgSQL functions for attendance co
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fabiokrone&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Top Languages" />
-
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=fabiokrone&theme=github-dark-blue&hide_border=true" alt="GitHub Streak" />
-
-</div>
-
----
-
 ## 🎓 Education
 
 - **Specialization in Cybersecurity** — UNIBF *(in progress)*
