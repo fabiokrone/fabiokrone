@@ -21,7 +21,7 @@ Founder of **TermoCerto**, an AI platform that generates procurement documents (
 - 🏛️ Technical advisor to **8 municipalities** in Santa Catarina — payroll, HR, compliance
 - 👥 Systems serving **550+ public servants** in production
 - 🤖 Building with **Anthropic Claude, FastAPI, Next.js, PostgreSQL + pgvector**
-- 🎓 Postgraduate in **Cybersecurity** (UNIBF) | Background in **Data Science** (Ada Tech)
+- 🎓 Specialization in **Cybersecurity** (UNIBF) | Background in **Data Science** (Ada Tech)
 - 🌐 **Languages:** Portuguese (Native) | English (Fluent) | German (Professional)
 
 ---
@@ -63,16 +63,6 @@ Automated time-tracking agent with advanced PL/pgSQL functions for attendance co
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![PL/pgSQL](https://img.shields.io/badge/PL%2FpgSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-
-</td></tr>
-<tr><td>
-
-### 🏛️ Reforma Administrativa
-
-Administrative reform management system for municipalities — organizational restructuring, position mapping, and compliance tracking.
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 
 </td></tr>
 </table>
@@ -147,7 +137,7 @@ Administrative reform management system for municipalities — organizational re
 
 ## 🎓 Education
 
-- **Postgraduate in Cybersecurity** — UNIBF *(in progress)*
+- **Specialization in Cybersecurity** — UNIBF *(in progress)*
 - **Data Science Specialization** — Ada Tech (Let's Code), São Paulo (2021–2022)
 - **B.Sc. Information Systems** — UNOESC, Santa Catarina (2008–2013)
 
