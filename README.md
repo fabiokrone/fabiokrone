@@ -29,7 +29,7 @@ I build software for Brazilian municipalities — the kind of infrastructure tha
 
 ### [TermoCerto](https://termocerto.com.br) — AI platform for public procurement &nbsp; `Live in production`
 
-End-to-end SaaS that turns a procurement request into a **defensible dossier** (DFD + ETP + TR + Pesquisa de Preços + Justificativa) under Brazil's new procurement law (Lei 14.133/2021). Web + WhatsApp interfaces.
+End-to-end SaaS that turns a procurement request into a **defensible dossier** (scope definition, preliminary technical study, statement of work, price research and justification) under Brazil's new procurement law (Lei 14.133/2021). Web + WhatsApp interfaces.
 
 <details>
 <summary><b>Why this problem is hard</b></summary>
@@ -37,9 +37,9 @@ End-to-end SaaS that turns a procurement request into a **defensible dossier** (
 
 Brazilian public procurement requires every document to cite the right statute, every price reference to be traceable, and every methodology decision to be auditable by TCU (the federal audit court). A hallucinated citation is a legal risk. A wrong median is a nullified tender.
 
-The platform integrates **5 government data sources** (PNCP, Portal de Compras Públicas, TCE-SC via Qlik Sense WebSocket, Compras.gov, internal pgvector of 33k+ contracts), runs a **14-family extractor pipeline** (IT hardware, furniture, vehicles, toner, paper, cleaning services, etc.) with deterministic regex-based spec extraction, applies **tri-state comparability** (match/mismatch/unknown), then an IQR-based benchmark engine to produce legally defensible price medians with a 95% t-Student confidence interval.
+The platform integrates **5 government data sources** (PNCP, the Public Procurement Portal, TCE-SC via Qlik Sense WebSocket, Compras.gov, and an internal pgvector store of 33k+ contracts), runs a **14-family extractor pipeline** (IT hardware, furniture, vehicles, toner, paper, cleaning services, etc.) with deterministic regex-based spec extraction, applies **tri-state comparability** (match/mismatch/unknown), then an IQR-based benchmark engine to produce legally defensible price medians with a 95% t-Student confidence interval.
 
-Document generation uses **Anthropic Claude** with a versioned RAG of **325 chunks** of Brazilian procurement law (Lei 14.133 + 6 SEGES/ME Normative Instructions + TCU súmulas and acórdãos). Every LLM call is logged with tokens, cost and RAG context for full auditability.
+Document generation uses **Anthropic Claude** with a versioned RAG of **325 chunks** of Brazilian procurement law (Lei 14.133 + 6 SEGES/ME Normative Instructions + Federal Audit Court case law and precedents). Every LLM call is logged with tokens, cost and RAG context for full auditability.
 
 </details>
 
@@ -49,7 +49,6 @@ Document generation uses **Anthropic Claude** with a versioned RAG of **325 chun
 - **5 government data sources** integrated · **14 product families** supported
 - **325-chunk legal RAG** with reranker · multi-tenant PostgreSQL with Row-Level Security
 - Measured unit economics: **~US$0.40 per generated dossier** in LLM cost
-- **INPI-registered software** (process nº 512026002577-0) · **ABES** affiliation in progress
 
 **Stack:**
 ![Python](https://img.shields.io/badge/Python_3.12-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -122,12 +121,12 @@ Document generation uses **Anthropic Claude** with a versioned RAG of **325 chun
 
 ## Domain expertise
 
-![Lei 14.133/2021](https://img.shields.io/badge/Lei_14.133%2F2021-Nova_Lei_de_Licitações-1A3C6E?style=flat-square)
-![IN SEGES/ME 65/2021](https://img.shields.io/badge/IN_SEGES%2FME_65%2F2021-Pesquisa_de_Preços-1A3C6E?style=flat-square)
-![TCU](https://img.shields.io/badge/TCU-Jurisprudência_%26_Auditoria-1A3C6E?style=flat-square)
-![TCE/SC](https://img.shields.io/badge/TCE%2FSC-Transparência-1A3C6E?style=flat-square)
+![Lei 14.133/2021](https://img.shields.io/badge/Lei_14.133%2F2021-Brazilian_Procurement_Law-1A3C6E?style=flat-square)
+![IN SEGES/ME 65/2021](https://img.shields.io/badge/IN_65%2F2021-Price_Research-1A3C6E?style=flat-square)
+![TCU](https://img.shields.io/badge/TCU-Federal_Audit_Court-1A3C6E?style=flat-square)
+![TCE/SC](https://img.shields.io/badge/TCE%2FSC-State_Audit_Court-1A3C6E?style=flat-square)
 ![eSocial](https://img.shields.io/badge/eSocial-RAIS_%C2%B7_DIRF_%C2%B7_SEFIP-1A3C6E?style=flat-square)
-![PNCP](https://img.shields.io/badge/PNCP-Portal_Nacional_de_Contratações-1A3C6E?style=flat-square)
+![PNCP](https://img.shields.io/badge/PNCP-National_Procurement_Portal-1A3C6E?style=flat-square)
 
 ---
 
