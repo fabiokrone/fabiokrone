@@ -1,107 +1,70 @@
-<div align="center">
-
 # Fabio Krone
 
-**Full-stack engineer shipping AI for the Brazilian public sector**
-Founder @ [TermoCerto](https://termocerto.com.br) · Santa Catarina, Brazil
+Full-stack engineer building AI products for the Brazilian public sector. Founder of [TermoCerto](https://termocerto.com.br). Based in Santa Catarina, Brazil.
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/fabiokrone)
-[![Email](https://img.shields.io/badge/-Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fabiokrone10@gmail.com)
-[![Website](https://img.shields.io/badge/-termocerto.com.br-1A3C6E?style=for-the-badge&logo=google-chrome&logoColor=white)](https://termocerto.com.br)
-
-</div>
+[LinkedIn](https://linkedin.com/in/fabiokrone) · [Email](mailto:fabiokrone10@gmail.com) · [termocerto.com.br](https://termocerto.com.br)
 
 ---
 
 ## About
 
-I build software for Brazilian municipalities — the kind of infrastructure that touches real public servants, real payrolls, and real procurement processes. My work sits at the intersection of **full-stack engineering, applied AI, and public-sector compliance**.
+I build software for Brazilian municipalities — payroll systems, HR platforms, and procurement tools that operate under federal regulation and state-level audit. My work sits at the intersection of full-stack engineering, applied AI, and public-sector compliance.
 
-- Technical advisor to **8 municipalities** in Santa Catarina (payroll, HR, compliance)
-- Systems **serving 550+ public servants** in production
-- Founder & principal engineer of **[TermoCerto](https://termocerto.com.br)** — AI platform for public procurement under Lei 14.133/2021
-- Specialization in **Cybersecurity** (UNIBF, in progress) · Background in **Data Science** (Ada Tech)
-- **Portuguese** (native) · **English** (fluent) · **German** (professional)
+Currently:
+
+- Technical advisor to eight municipalities in Santa Catarina (payroll, HR, procurement compliance).
+- Systems serving 550+ public servants in production.
+- Founder and principal engineer of TermoCerto, an AI platform for procurement under Brazil's Law 14.133/2021.
+
+Languages: Portuguese (native), English (fluent), German (professional).
 
 ---
 
 ## Currently shipping
 
-### [TermoCerto](https://termocerto.com.br) — AI platform for public procurement &nbsp; `Live in production`
+### TermoCerto — AI platform for public procurement
 
-End-to-end SaaS that turns a procurement request into a **defensible dossier** (scope definition, preliminary technical study, statement of work, price research and justification) under Brazil's new procurement law (Lei 14.133/2021). Web + WhatsApp interfaces.
+End-to-end SaaS that turns a procurement request into a defensible dossier — scope definition, preliminary technical study, statement of work, and price research with full justification — under Brazil's procurement law (Law 14.133/2021). Available as a web application and through a WhatsApp interface.
 
-<details>
-<summary><b>Why this problem is hard</b></summary>
-<br>
+The problem is harder than it looks. Brazilian public procurement requires every document to cite the correct statute, every reference price to be traceable to its source, and every methodological choice to be defensible before federal and state audit courts. A hallucinated citation is a legal risk; a wrong median is a nullified tender. Generic AI assistants fail this bar by default.
 
-Brazilian public procurement requires every document to cite the right statute, every price reference to be traceable, and every methodology decision to be auditable by TCU (the federal audit court). A hallucinated citation is a legal risk. A wrong median is a nullified tender.
+The platform integrates five government data sources (PNCP, the federal procurement portal, TCE-SC via Qlik Sense WebSocket, Compras.gov, and an internal pgvector store of 33,000+ contracts), runs a fourteen-family extractor pipeline with deterministic regex-based specification matching, applies a tri-state comparability judge (match / mismatch / unknown), and produces legally defensible price medians with a 95% Student-t confidence interval over the IQR-filtered sample.
 
-The platform integrates **5 government data sources** (PNCP, the Public Procurement Portal, TCE-SC via Qlik Sense WebSocket, Compras.gov, and an internal pgvector store of 33k+ contracts), runs a **14-family extractor pipeline** (IT hardware, furniture, vehicles, toner, paper, cleaning services, etc.) with deterministic regex-based spec extraction, applies **tri-state comparability** (match/mismatch/unknown), then an IQR-based benchmark engine to produce legally defensible price medians with a 95% t-Student confidence interval.
+Document generation is built on Anthropic Claude with a versioned RAG index of 325 chunks covering Law 14.133/2021, six SEGES/ME normative instructions, and Federal Audit Court precedents. Every model call is logged with token usage, cost, and retrieved context, so any decision the system makes can be reconstructed for audit.
 
-Document generation uses **Anthropic Claude** with a versioned RAG of **325 chunks** of Brazilian procurement law (Lei 14.133 + 6 SEGES/ME Normative Instructions + Federal Audit Court case law and precedents). Every LLM call is logged with tokens, cost and RAG context for full auditability.
+**Selected technical details**
 
-</details>
+- Multi-tenant PostgreSQL with row-level security; Celery for asynchronous processing; pgvector for semantic retrieval.
+- 962 automated tests with 97% coverage on the end-to-end audit suite — the suite that mirrors the audit court review path.
+- Measured unit economics: roughly US$0.40 in LLM cost per generated dossier.
+- Single-engineer development from the ground up.
 
-**Engineering snapshot:**
-- **613 commits** in the last 2 months · single-engineer development
-- **962 automated tests** · 97% coverage on end-to-end audit suite
-- **5 government data sources** integrated · **14 product families** supported
-- **325-chunk legal RAG** with reranker · multi-tenant PostgreSQL with Row-Level Security
-- Measured unit economics: **~US$0.40 per generated dossier** in LLM cost
+Built with Python 3.12, FastAPI, Celery, PostgreSQL 16, pgvector, Redis, MinIO, Next.js 14, TypeScript, Tailwind CSS, Anthropic Claude, deployed on Railway behind Cloudflare.
 
-**Stack:**
-![Python](https://img.shields.io/badge/Python_3.12-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js_14-000?style=flat-square&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL_16-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![pgvector](https://img.shields.io/badge/pgvector-4169E1?style=flat-square)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white)
-![Claude](https://img.shields.io/badge/Anthropic_Claude-6B4FBB?style=flat-square&logo=anthropic&logoColor=white)
-![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-
-> Source is closed (commercial SaaS). Live product at [termocerto.com.br](https://termocerto.com.br) · demo available on request.
+Source is closed (commercial SaaS). The product is live at [termocerto.com.br](https://termocerto.com.br); a guided demo is available on request.
 
 ---
 
 ## Other work
 
-| Project | Description | Stack |
-|---|---|---|
-| **Folha Pro** | Municipal payroll & HR platform — payroll runs, benefits, tax calculations, eSocial/RAIS/DIRF compliance. Serving 8 municipalities and 550+ public servants. | React · FastAPI · Supabase |
-| **PontoAgent** | Time-tracking agent with PL/pgSQL analytics for municipal attendance control. | PostgreSQL · PL/pgSQL |
+**Folha Pro.** Municipal payroll and HR platform — payroll runs, benefits administration, tax calculations, and eSocial / RAIS / DIRF compliance. In production across eight municipalities, serving 550+ public servants. React, FastAPI, Supabase.
 
+**PontoAgent.** Time-tracking system with PL/pgSQL analytics for municipal attendance control. PostgreSQL with stored procedures for shift validation, exception detection, and consolidated reporting.
 
-## Domain expertise
+---
 
-![Lei 14.133/2021](https://img.shields.io/badge/Lei_14.133%2F2021-Brazilian_Procurement_Law-1A3C6E?style=flat-square)
-![IN SEGES/ME 65/2021](https://img.shields.io/badge/IN_65%2F2021-Price_Research-1A3C6E?style=flat-square)
-![TCU](https://img.shields.io/badge/TCU-Federal_Audit_Court-1A3C6E?style=flat-square)
-![TCE/SC](https://img.shields.io/badge/TCE%2FSC-State_Audit_Court-1A3C6E?style=flat-square)
-![eSocial](https://img.shields.io/badge/eSocial-RAIS_%C2%B7_DIRF_%C2%B7_SEFIP-1A3C6E?style=flat-square)
-![PNCP](https://img.shields.io/badge/PNCP-National_Procurement_Portal-1A3C6E?style=flat-square)
+## Domain background
+
+Brazilian public administration, with depth in Law 14.133/2021 (federal procurement), Normative Instruction SEGES/ME 65/2021 (price research methodology), eSocial and adjacent labor reporting (RAIS, DIRF, SEFIP), and audit-court practice at federal level (TCU) and state level (TCE-SC). Technical writing in Portuguese for legal-administrative audiences.
 
 ---
 
 ## Education
 
-- **Specialization in Cybersecurity** — UNIBF · *in progress*
-- **Data Science Specialization** — Ada Tech (Let's Code), São Paulo · 2021–2022
-- **B.Sc. Information Systems** — UNOESC, Santa Catarina · 2008–2013
+- Specialization in Cybersecurity — UNIBF (in progress).
+- Data Science Specialization — Ada Tech (Let's Code), São Paulo, 2021–2022.
+- B.Sc. in Information Systems — UNOESC, Santa Catarina, 2008–2013.
 
 ---
 
-<div align="center">
-
-### Open to partnerships, consulting and roles
-
-Especially at the intersection of **AI, public sector, and regulated domains.**
-
-[![LinkedIn](https://img.shields.io/badge/-Let's_connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/fabiokrone)
-[![Email](https://img.shields.io/badge/-Get_in_touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fabiokrone10@gmail.com)
-
-</div>
+Open to consulting, partnerships, and roles where AI meets regulated public-sector domains. Reach out via [LinkedIn](https://linkedin.com/in/fabiokrone) or [email](mailto:fabiokrone10@gmail.com).
