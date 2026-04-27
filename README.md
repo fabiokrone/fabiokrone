@@ -24,24 +24,15 @@ Languages: Portuguese (native), English (fluent), German (professional).
 
 ### TermoCerto — AI platform for public procurement
 
-End-to-end SaaS that turns a procurement request into a defensible dossier — scope definition, preliminary technical study, statement of work, and price research with full justification — under Brazil's procurement law (Law 14.133/2021). Available as a web application and through a WhatsApp interface.
+SaaS that produces audit-defensible procurement documents and price research under Brazil's Law 14.133/2021. Web and WhatsApp interfaces.
 
-The problem is harder than it looks. Brazilian public procurement requires every document to cite the correct statute, every reference price to be traceable to its source, and every methodological choice to be defensible before federal and state audit courts. A hallucinated citation is a legal risk; a wrong median is a nullified tender. Generic AI assistants fail this bar by default.
+Every citation must be traceable and every methodology defensible before federal and state audit courts. The system is engineered around that constraint: five government data sources integrated, a deterministic extractor pipeline across fourteen procurement families, versioned RAG over Law 14.133 and audit-court precedent, and full per-call logging of model usage and retrieved context.
 
-The platform integrates five government data sources (PNCP, the federal procurement portal, TCE-SC via Qlik Sense WebSocket, Compras.gov, and an internal pgvector store of 33,000+ contracts), runs a fourteen-family extractor pipeline with deterministic regex-based specification matching, applies a tri-state comparability judge (match / mismatch / unknown), and produces legally defensible price medians with a 95% Student-t confidence interval over the IQR-filtered sample.
+~US$0.40 in LLM cost per generated dossier · 97% coverage on the audit-path test suite · single-engineer build.
 
-Document generation is built on Anthropic Claude with a versioned RAG index of 325 chunks covering Law 14.133/2021, six SEGES/ME normative instructions, and Federal Audit Court precedents. Every model call is logged with token usage, cost, and retrieved context, so any decision the system makes can be reconstructed for audit.
+Stack: Python, FastAPI, PostgreSQL with pgvector, Celery, Next.js, TypeScript, Anthropic Claude. Deployed on Railway behind Cloudflare.
 
-**Selected technical details**
-
-- Multi-tenant PostgreSQL with row-level security; Celery for asynchronous processing; pgvector for semantic retrieval.
-- 962 automated tests with 97% coverage on the end-to-end audit suite — the suite that mirrors the audit court review path.
-- Measured unit economics: roughly US$0.40 in LLM cost per generated dossier.
-- Single-engineer development from the ground up.
-
-Built with Python 3.12, FastAPI, Celery, PostgreSQL 16, pgvector, Redis, MinIO, Next.js 14, TypeScript, Tailwind CSS, Anthropic Claude, deployed on Railway behind Cloudflare.
-
-Source is closed (commercial SaaS). The product is live at [termocerto.com.br](https://termocerto.com.br); a guided demo is available on request.
+Live at [termocerto.com.br](https://termocerto.com.br); closed source; guided demo on request.
 
 ---
 
