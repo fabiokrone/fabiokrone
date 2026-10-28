@@ -1,0 +1,36 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="6" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24357E" />
+      <stop offset="1" stop-color="#0D1421" />
+    </linearGradient>
+    <linearGradient id="c" x1="32" y1="18" x2="50" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00F0FF" />
+      <stop offset="1" stop-color="#00C8FF" />
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#bg)" />
+
+  <text
+    x="21.5"
+    y="43"
+    fill="white"
+    font-family="Inter, Arial, sans-serif"
+    font-size="34"
+    font-weight="800"
+    letter-spacing="-1.2"
+    text-anchor="middle"
+  >T</text>
+
+  <text
+    x="43.5"
+    y="43"
+    fill="url(#c)"
+    font-family="Inter, Arial, sans-serif"
+    font-size="34"
+    font-weight="800"
+    letter-spacing="-1.2"
+    text-anchor="middle"
+  >C</text>
+</svg>

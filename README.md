@@ -1,43 +1,31 @@
-# Fabio Krone
+# Fábio Krone
 
-Full-stack dev. Construo software pro setor público brasileiro — folha, RH, compras.
+**Full-stack Developer · Python, TypeScript & Applied AI**
 
-[LinkedIn](https://linkedin.com/in/fabiokrone) · [Email](mailto:fabiokrone10@gmail.com) · [termocerto.com.br](https://termocerto.com.br)
+I build web platforms, data pipelines and AI-assisted workflows for Brazil’s public sector.
 
----
+[LinkedIn](https://linkedin.com/in/fabiokrone) · [Email](mailto:fabiokrone10@gmail.com)
 
 ## About
 
-I work with municipalities in Santa Catarina — systems running under federal regulation and state-level audit. Lately focused on AI in regulated domains.
+I work with municipalities in Santa Catarina, translating public-sector rules into practical software. My projects combine multi-tenant applications, API integrations, data pipelines and applied AI, with attention to data isolation, validated calculations and traceable results.
 
-PT (native) · EN (fluent) · DE (professional)
+**Domain experience:** Public procurement (Law 14.133/2021), municipal finance, eSocial and labor reporting, and documentation for TCU/TCE-SC reviews.
 
----
+## Selected projects
 
-## Projects
+| Project | What it does | Core stack |
+| --- | --- | --- |
+| <a href="https://educaemdia.com.br"><img src="assets/projects/educaemdia.png" width="20" height="20" alt="">&nbsp;Educa em Dia</a> | Education funding diagnostics and deadline alerts, using public data from 295 municipalities. | Python · Preact · TypeScript · Supabase · AWS |
+| <a href="https://www.gestaoemendas.com.br"><img src="assets/projects/gestaoemendas.svg" width="20" height="20" alt="">&nbsp;GestãoEmendas</a> | Municipal budget amendments: balances, reviews, document generation and public transparency. | FastAPI · Next.js · TypeScript · PostgreSQL |
+| <a href="https://sistemafolhapro.com.br"><img src="assets/projects/folhapro.png" width="20" height="20" alt="">&nbsp;FolhaPro</a> | Payroll and HR analytics, salary simulations and Betha Cloud integration. | FastAPI · React · TypeScript · Supabase |
+| <a href="https://termocerto.com.br"><img src="assets/projects/termocerto.svg" width="20" height="20" alt="">&nbsp;TermoCerto</a> | AI-assisted procurement documents and price research with traceable sources. | FastAPI · Next.js · PostgreSQL/pgvector · Claude |
+| <a href="https://tributospro.com.br"><img src="assets/projects/tributospro.svg" width="20" height="20" alt="">&nbsp;TributosPro</a> | Property tax simulations, valuation scenarios and municipal revenue analytics. | Node.js · JavaScript · Python · PostgreSQL |
 
-**TermoCerto** — SaaS for public procurement under Law 14.133/21. Generates documents and price research with AI. Web + WhatsApp.
-Python, FastAPI, Postgres + pgvector, Celery, Next.js, Claude. Railway, Cloudflare.
-[termocerto.com.br](https://termocerto.com.br)
+## Background
 
-**Folha Pro** — Municipal payroll and HR platform. eSocial, RAIS, DIRF. In production across 8 municipalities.
-React, FastAPI, Supabase.
+**Education:** B.Sc. Information Systems — UNOESC (2008–2013) · Data Science — Ada Tech / Let's Code (2021–2022).
 
-**PontoAgent** — Time-tracking with PL/pgSQL analytics. Stored procedures for shift validation and reporting.
+**Languages:** Portuguese (native) · English (fluent) · German (professional).
 
----
-
-## Domain
-
-Law 14.133/21, IN SEGES/ME 65/21, eSocial and labor reporting (RAIS, DIRF, SEFIP), TCU and TCE-SC audit practice.
-
----
-
-## Education
-
-- B.Sc. Information Systems — UNOESC, 2008–13
-- Data Science — Ada Tech (Let's Code), 2021–22
-
----
-
-Open to consulting and partnerships.
+**Open to software engineering opportunities and consulting.**
