@@ -18,7 +18,7 @@ I work with municipalities in Santa Catarina, translating public-sector rules in
 | --- | --- | --- |
 | <a href="https://educaemdia.com.br"><img src="assets/projects/educaemdia.png" width="20" height="20" alt="">&nbsp;Educa em Dia</a> | Education funding diagnostics and deadline alerts, using public data from 295 municipalities. | Python · Preact · TypeScript · Supabase · AWS |
 | <a href="https://www.gestaoemendas.com.br"><img src="assets/projects/gestaoemendas.svg" width="20" height="20" alt="">&nbsp;GestãoEmendas</a> | Municipal budget amendments: balances, reviews, document generation and public transparency. | FastAPI · Next.js · TypeScript · PostgreSQL |
-| <a href="https://sistemafolhapro.com.br"><img src="assets/projects/folhapro.png" width="20" height="20" alt="">&nbsp;FolhaPro</a> | Payroll and HR analytics, salary simulations and Betha Cloud integration. | FastAPI · React · TypeScript · Supabase |
+| <a href="https://sistemafolhapro.com.br"><img src="assets/projects/folhapro-logo.png" width="20" height="20" alt="">&nbsp;FolhaPro</a> | Payroll and HR analytics, salary simulations and Betha Cloud integration. | FastAPI · React · TypeScript · Supabase |
 | <a href="https://termocerto.com.br"><img src="assets/projects/termocerto.svg" width="20" height="20" alt="">&nbsp;TermoCerto</a> | AI-assisted procurement documents and price research with traceable sources. | FastAPI · Next.js · PostgreSQL/pgvector · Claude |
 | <a href="https://tributospro.com.br"><img src="assets/projects/tributospro.svg" width="20" height="20" alt="">&nbsp;TributosPro</a> | Property tax simulations, valuation scenarios and municipal revenue analytics. | Node.js · JavaScript · Python · PostgreSQL |
 
